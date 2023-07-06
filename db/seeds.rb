@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+# db/seeds.rb
+Hero.create(name: "Kamala Khan", super_name: "Ms. Marvel")
+Hero.create(name: "Doreen Green", super_name: "Squirrel Girl")
+Hero.create(name: "Gwen Stacy", super_name: "Spider-Gwen")
+
+Power.create(name: "Super Strength", description: "Gives the wielder super-human strengths")
+Power.create(name: "Flight", description: "Gives the wielder the ability to fly through the skies at supersonic speed")
+
+HeroPower.create(hero_id: 1, power_id: 1, strength: "Strong")
+HeroPower.create(hero_id: 1, power_id: 2, strength: "Average")
